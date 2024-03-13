@@ -43,7 +43,7 @@ app.post("/posts", (req, res) => {
     
     // Generate UUID for new post
     let id = uuidv4();
-    console.log(id);n
+    console.log(id);
     posts.push({ id ,username, content });
     res.redirect("/posts");
 });
